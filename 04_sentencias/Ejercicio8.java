@@ -9,7 +9,6 @@ public class Ejercicio8 {
         int suma = 0;
         int contador = 0;
         for (int i = 1; i <= numE; i++) {
-            suma += i;
             System.out.println("Ingrese edad del estudiante");
             int edad = scanner.nextInt();
             suma += edad;
@@ -19,6 +18,6 @@ public class Ejercicio8 {
         }
         double promE = (double) suma / numE;
         System.out.println("El promedio de edades es: " + promE);  
-        System.out.println("El número de estudiantes mayores de edad es: " + contador);
+        System.out.println("El porcentaje de mayores de edad es: " + (double) contador / numE * 100 + "%");
     }
 }
