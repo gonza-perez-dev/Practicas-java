@@ -24,6 +24,26 @@ public class MainAuto {
         System.out.println("Tipo de combustible: " + auto2.getTipoCombustible());
         System.out.println("Kilometraje: " + auto2.getKm() + " km");
 
+
+        Auto auto3 = new Auto("Fiat", "600", 17.5, "Diesel", 800000);
+
+
+
+        System.out.println("--- TERCER AUTO ---");
+        System.out.println("Marca: " +auto3.getMarca());
+        System.out.println("Modelo: " + auto3.getModelo());
+        System.out.println("Consumo: " + auto3.getConsumo() + " km/l");
+        System.out.println("Tipo de combustible: " + auto3.getTipoCombustible());
+        System.out.println("Kilometraje: " + auto3.getKm() + " km");
+
+
+        //Crear un auto que no sabemos los datos (Constructo Vacio)
+
+        Auto auto4 = new Auto();
+
+        //Crear un auto que no sabemos los datos (Constructo Vacio)
+
+        
     }
 
 }
