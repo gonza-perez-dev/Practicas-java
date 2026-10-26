@@ -2,36 +2,36 @@ package P1;
 
 public class Inmueble {
 
-    private int ID;
-    private String dir;
+    private int identificador;
+    private String direccion;
     private double area;
-    private double precio;
+    private double precioPorM2;
 
     // Constructor vacío
     public Inmueble() {
     }
 
-    public Inmueble(int ID, String dir, double area, double precio){
-        this.ID=ID;
-        this.dir=dir;
+    public Inmueble(int identificador, String direccion, double area, double precioPorM2){
+        this.identificador=identificador;
+        this.direccion=direccion;
         this.area=area;
-        this.precio=precio;
+        this.precioPorM2=precioPorM2;
     }
 
-    public int getID() {
-        return this.ID;
+    public int getIdentificador() {
+        return this.identificador;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
     }
 
-    public String getDir() {
-        return this.dir;
+    public String getDireccion() {
+        return this.direccion;
     }
 
-    public void setDir(String dir) {
-        this.dir = dir;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public double getArea() {
@@ -42,19 +42,23 @@ public class Inmueble {
         this.area = area;
     }
 
-    public double getPrecio() {
-        return this.precio;
+    public double getPrecioPorM2() {
+        return this.precioPorM2;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrecioPorM2(double precioPorM2) {
+        this.precioPorM2 = precioPorM2;
     }
 
     public double calcularPrecioVenta(){
-        return this.area * this.precio;
+        return this.area * this.precioPorM2;
     }
 
     public void mostrarDatos(){
-        System.out.println();
+        System.out.println("El ID del inmueble es: " + this.identificador);
+        System.out.println("La direccion es: " + this.direccion);
+        System.out.println("El area es: " + this.area);
+        System.out.println("El precio por metro cuadrado es: "+ this.precioPorM2);
+
     }
 }
