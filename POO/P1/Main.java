@@ -12,7 +12,13 @@ public class Main {
         casa1.setNumBanos(1);
         casa1.setNumCasa(1);
 
+        casa1.mostrarDatos();
+        System.out.println(casa1.calcularPrecioVenta());
+
         Casa casa2 = new Casa(2, "San Martin 123", 220, 1400, 3, 2, 2);
+
+        casa2.mostrarDatos();
+        System.out.println(casa2.calcularPrecioVenta());
 
         Departamento departamento1 = new Departamento();
         departamento1.setIdentificador(3);
@@ -24,7 +30,13 @@ public class Main {
         departamento1.setPiso(2);
         departamento1.setDepartamento("2B");
 
+        departamento1.mostrarDatos();
+        System.out.println(departamento1.calcularPrecioVenta());
+
         Departamento departamento2 = new Departamento(4, "Av. Libertador 23", 80, 1000, 2, 1, 3, "3A");
+
+        departamento2.mostrarDatos();
+        System.out.println(departamento2.calcularPrecioVenta());
 
         LocalComercial localComercial1 = new LocalComercial();
         localComercial1.setIdentificador(5);
@@ -33,20 +45,12 @@ public class Main {
         localComercial1.setPrecioPorM2(3000);
         localComercial1.setCentroComercial("Paseo del Centro");
 
+        localComercial1.mostrarDatos();
+        System.out.println(localComercial1.calcularPrecioVenta());
+
         LocalComercial localComercial2 = new LocalComercial(6, "Las praderas S/N", 500, 2800, "La Bodega");
 
-        casa1.mostrarDatos();
-        casa2.mostrarDatos();
-        departamento1.mostrarDatos();
-        departamento2.mostrarDatos();
-        localComercial1.mostrarDatos();
         localComercial2.mostrarDatos();
-
-        System.out.println(casa1.calcularPrecioVenta());
-        System.out.println(casa2.calcularPrecioVenta());
-        System.out.println(departamento1.calcularPrecioVenta());
-        System.out.println(departamento2.calcularPrecioVenta());
-        System.out.println(localComercial1.calcularPrecioVenta());
         System.out.println(localComercial2.calcularPrecioVenta());
 
     }
