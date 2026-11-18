@@ -25,11 +25,11 @@ public class Producto {
         System.out.println("Precio: " + this.precio);
     }
 
-    public void mostrarInfoInterna(boolean oferta){
+    public void mostrarInfoInterna(boolean oferta) {
         System.out.println("¡Oferta del día! 15% de descuento en productos seleccionados.");
     }
 
-    public void datosPublicos(){
+    public void datosPublicos() {
         System.out.println("Precio: " + this.precio);
     }
 }
